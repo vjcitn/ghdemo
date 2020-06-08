@@ -1,6 +1,6 @@
 Package: intmmo
 Title: integrative analysis of multimodal omics data
-Version: 0.1.4
+Version: 0.1.5
 Authors@R: 
     person(given = "Vincent",
            family = "Carey",
