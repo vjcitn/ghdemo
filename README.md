@@ -1,37 +1,49 @@
-## Welcome to GitHub Pages
+# BuildABiocWorkshop2020
 
-You can use the [editor on GitHub](https://github.com/vjcitn/ghdemo/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This package is a template for building a Bioconductor 2020 workshop. The package
+includes Github actions to:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+1. Set up bioconductor/bioconductor_docker:devel on Github resources
+2. Install package dependencies for your package (based on the `DESCRIPTION` file)
+3. Run `rcmdcheck::rcmdcheck`
+4. Build a pkgdown website and push it to github pages
+5. Build a docker image with the installed package and dependencies
 
-### Markdown
+## Responsibilities
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+This year, package authors will be primarily responsible for:
 
-```markdown
-Syntax highlighted code block
+1. Creating a landing site of their choosing for their workshops (a website). This website should be listed in the `DESCRIPTION` file as the `URL`.
+2. Creating a docker image that will contain workshop materials and the installed packages necessary to run those materials. The name of the resulting docker image, including "tag" if desired, should be listed in a non-standard tag, `DockerImage:` in the `DESCRIPTION` file. 
 
-# Header 1
-## Header 2
-### Header 3
+Both of those tasks can be accomplished using the Github actions included in this template package. 
 
-- Bulleted
-- List
+## Details
 
-1. Numbered
-2. List
+For detailed instructions, see the `How to build a workshop` article/vignette.
 
-**Bold** and _Italic_ and `Code` text
+## Results of successful deployment
 
-[Link](url) and ![Image](src)
+- A working docker image that contains the installed package and dependencies.
+- An up-to-date `pkgdown` website at https://YOURUSERNAME.github.io/YOURREPOSITORYNAME/
+- Docker image will be tagged with `latest`, `sha-XXXXXX` where `XXXXXX` is the hash of the current `master` commit, and `master`. 
+
+## To use the resulting image:
+
+```sh
+docker run -e PASSWORD=<choose_a_password_for_rstudio> -p 8787:8787 YOURDOCKERIMAGENAME
+```
+Once running, navigate to https://localhost:8787/ and then login with `rstudio`:`yourchosenpassword`. 
+
+To try with **this** repository docker image:
+
+```sh
+docker run -e PASSWORD=abc -p 8787:8787 seandavi/buildabiocworkshop2020
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+## Whatcha get
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/vjcitn/ghdemo/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+https://seandavi.github.io/BuildABiocWorkshop2020
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+![dockerhub](https://github.com/seandavi/BuildABiocWorkshop2020/raw/master/inst/images/dockerhub_result.png)
