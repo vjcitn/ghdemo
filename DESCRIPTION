@@ -1,4 +1,4 @@
-Package: ghdemo
+Package: intmmo
 Title: integrative analysis of multimodal omics data
 Version: 0.1.4
 Authors@R: 
@@ -22,7 +22,7 @@ Suggests:
     knitr,
     rmarkdown,
     pkgdown
-URL: https://vjcitn.github.io/ghdemo/
-BugReports: https://github.com/vjcitn/ghdemo/issues/new/choose
+URL: https://vjcitn.github.io/intmmo/
+BugReports: https://github.com/vjcitn/intmmo/issues/new/choose
 VignetteBuilder: knitr
 DockerImage: seandavi/buildabiocworkshop2020:latest
