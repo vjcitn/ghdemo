@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# Workshop Title
+# test
 
 Authors:
     Vince Carey^[Channing Division of Network Medicine, Harvard Medical School]
