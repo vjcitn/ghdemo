@@ -1,9 +1,9 @@
 ---
-title: "intmmo"
-author: Sean Davis^[seandavi@gmail.com]
+title: "Integrative analysis of multimodal omics experiments: Software design and evaluation"
+author: Vince Carey^[stvjc@channing.harvard.edu]
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{An Example Workshop}
+  %\VignetteIndexEntry{Support for Banff 2020 multiomics software talk}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -19,35 +19,15 @@ knitr::opts_chunk$set(
 # Workshop Title
 
 Authors:
-    Author Name^[Institution],
-    Another Author^[Another Institution].
+    Vince Carey^[Channing Division of Network Medicine, Harvard Medical School]
     <br/>
-Last modified: 14 May, 2018.
+Last modified: 8 June, 2020.
 
 ## Overview
 
 ### Description
 
-Along with the topic of your workshop, include how students can expect
-to spend their time. For the description may also include information
-about what type of workshop it is (e.g. instructor-led live demo, lab,
-lecture + lab, etc.). Instructors are strongly recommended to provide
-completely worked examples for lab sessions, and a set of stand-alone
-notes that can be read and understood outside of the workshop.
-
 ### Pre-requisites
-
-List any workshop prerequisites, for example:
-
-* Basic knowledge of R syntax
-* Familiarity with the GenomicRanges class
-* Familiarity with xyz vignette (provide link)
-
-List relevant background reading for the workshop, including any
-theoretical background you expect students to have.
-
-* List any textbooks, papers, or other reading that students should be
-  familiar with. Include direct links where possible.
 
 ### Participation
 
