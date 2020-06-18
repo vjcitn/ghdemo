@@ -15,10 +15,16 @@ knitr::opts_chunk$set(
 )
 ```
 
-# test
+# Taking a look at HumanTranscriptomeCompendium
 
-Authors:
-    Vince Carey^[Channing Division of Network Medicine, Harvard Medical School]
-    <br/>
-Last modified: 8 June, 2020.
+```{r lk1}
+suppressPackageStartupMessages({
+library(HumanTranscriptomeCompendium)
+library(SummarizedExperiment)
+})
+htx = htx_load()
+htx
+system.time(lka <- assay(htx))
+lka
+```
 
