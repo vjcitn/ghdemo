@@ -3,7 +3,7 @@ title: "Second vignette"
 author: Vince Carey^[stvjc@channing.harvard.edu]
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{"Second vignette"}
+  %\VignetteIndexEntry{Second vignette}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
