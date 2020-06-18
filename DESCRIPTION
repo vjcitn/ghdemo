@@ -1,6 +1,6 @@
 Package: intmmo
 Title: integrative analysis of multimodal omics data
-Version: 0.1.6
+Version: 0.1.7
 Authors@R: 
     person(given = "Vincent",
            family = "Carey",
@@ -22,7 +22,7 @@ Depends: R (>= 3.6.0), HumanTranscriptomeCompendium, BiocFileCache, restfulSE,
 Suggests: 
     knitr,
     rmarkdown,
-    pkgdown
+    pkgdown, BiocStyle
 URL: https://vjcitn.github.io/intmmo/
 BugReports: https://github.com/vjcitn/intmmo/issues/new/choose
 VignetteBuilder: knitr

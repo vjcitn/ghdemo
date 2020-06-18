@@ -3,7 +3,7 @@ title: "Integrative analysis of multimodal omics experiments: Software design an
 author: Vince Carey^[stvjc@channing.harvard.edu]
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{"Support for Banff 2020 multiomics software talk"}
+  %\VignetteIndexEntry{Integrative analysis of multimodal omics experiments: Software design and evaluation}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -15,16 +15,6 @@ knitr::opts_chunk$set(
 )
 ```
 
-# Taking a look at HumanTranscriptomeCompendium
+# Introduction
 
-```{r lk1}
-suppressPackageStartupMessages({
-library(HumanTranscriptomeCompendium)
-library(SummarizedExperiment)
-})
-htx = htx_load()
-htx
-system.time(lka <- assay(htx))
-lka
-```
-
+This seems preformatted.
