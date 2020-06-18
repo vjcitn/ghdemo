@@ -17,4 +17,7 @@ knitr::opts_chunk$set(
 
 # Introduction
 
-This seems preformatted.
+We consider software and data concepts related to the
+concepts collected in the schema below.
+
+<img src="triang2.png"/>

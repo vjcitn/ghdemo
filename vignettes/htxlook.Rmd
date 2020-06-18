@@ -40,6 +40,13 @@ htx = htx_load()
 htx
 system.time(lka <- assay(htx))
 lka
+```
+
+The metadata for each sample in this
+compendium is limited; Sean Davis' Omicidx
+can be queried for more attributes.
+```{r lk2}
+names(colData(htx))
 head(sort(table(htx$study_title), decreasing=TRUE))
 ```
 
