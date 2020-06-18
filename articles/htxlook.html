@@ -37,7 +37,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">intmmo</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.7</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.8</span>
       </span>
     </div>
 
@@ -114,7 +114,7 @@
 })
 <span class="no">htx</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/pkg/HumanTranscriptomeCompendium/man/htx_load.html">htx_load</a></span>()
 <span class="co">#&gt; Loading required namespace: BiocFileCache</span>
-<span class="co">#&gt; using temporary cache /tmp/RtmpMPx26z/BiocFileCache</span>
+<span class="co">#&gt; using temporary cache /tmp/RtmpiZ3hcG/BiocFileCache</span>
 <span class="co">#&gt; adding RDS to local cache, future invocations will use local image</span>
 <span class="co">#&gt; adding rname 'https://s3.amazonaws.com/bcfound-bigrna/rangedHtxGeneSE.rds'</span>
 <span class="no">htx</span>
@@ -131,7 +131,7 @@
 <span class="fu"><a href="https://rdrr.io/r/base/system.time.html">system.time</a></span>(<span class="no">lka</span> <span class="kw">&lt;-</span> <span class="fu"><a href="https://rdrr.io/pkg/SummarizedExperiment/man/SummarizedExperiment-class.html">assay</a></span>(<span class="no">htx</span>))
 <span class="co">#&gt; Loading required package: rhdf5client</span>
 <span class="co">#&gt;    user  system elapsed </span>
-<span class="co">#&gt;   0.182   0.000   0.182</span>
+<span class="co">#&gt;   0.178   0.000   0.178</span>
 <span class="no">lka</span>
 <span class="co">#&gt; &lt;58288 x 181134&gt; matrix of class DelayedMatrix and type "double":</span>
 <span class="co">#&gt;                       DRX001125    DRX001126    DRX001127 ...  SRX999990</span>
@@ -157,7 +157,11 @@
 <span class="co">#&gt;  ENSG00000284745.1   0.000000</span>
 <span class="co">#&gt;  ENSG00000284746.1   0.000000</span>
 <span class="co">#&gt;  ENSG00000284747.1  94.606851</span>
-<span class="co">#&gt;  ENSG00000284748.1   5.240970</span>
+<span class="co">#&gt;  ENSG00000284748.1   5.240970</span></pre></body></html></div>
+<p>The metadata for each sample in this compendium is limited; Sean Davis’ Omicidx can be queried for more attributes.</p>
+<div class="sourceCode" id="cb3"><html><body><pre class="r"><span class="fu"><a href="https://rdrr.io/r/base/names.html">names</a></span>(<span class="fu"><a href="https://rdrr.io/pkg/SummarizedExperiment/man/SummarizedExperiment-class.html">colData</a></span>(<span class="no">htx</span>))
+<span class="co">#&gt; [1] "experiment_accession" "experiment_platform"  "study_accession"     </span>
+<span class="co">#&gt; [4] "study_title"</span>
 <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span>(<span class="fu"><a href="https://rdrr.io/r/base/sort.html">sort</a></span>(<span class="fu"><a href="https://rdrr.io/r/base/table.html">table</a></span>(<span class="no">htx</span>$<span class="no">study_title</span>), <span class="kw">decreasing</span><span class="kw">=</span><span class="fl">TRUE</span>))
 <span class="co">#&gt; </span>
 <span class="co">#&gt;                                                                    Genotype-Tissue Expression (GTEx) Common Fund Project </span>
